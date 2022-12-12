@@ -1,0 +1,12 @@
+
+
+ls- listing files int home directory 
+cd- change directory 
+cd.. previous directory
+cd(enter) - directly moves to home directory 
+mkdir- create a directory / folder
+touch- create a file in a directory
+cat - create a text file 
+nano - editor
+sudo - perform tasks that require root/adminsitrative permissions 
+pwd- present working directory(path of your current working directory
