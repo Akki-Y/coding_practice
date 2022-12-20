@@ -1,5 +1,6 @@
 
 
+
 ls- listing files int home directory 
 cd- change directory 
 cd.. previous directory
