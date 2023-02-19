@@ -1,0 +1,112 @@
+/*Joins : Join two tables based on common aolumn, and selects records that have matching values in columns*/
+
+mysql> create database Joins;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> use Joins;
+Database changed
+mysql> create table Customer(ID int, Name varchar(50), Gender varchar(50));
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> insert into Customer values(1, 'Aki', 'F');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into Customer values(2, 'Jhon', 'M');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into Customer values(3, 'Bob', 'M');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into Customer values(4, 'Kavi', 'F');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> create table Orders(ID int, CustomerID int, OrderDate date);
+mysql> alter table Orders add CustomerID int;
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table Orders add orderdate date;
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from Orders;
+Empty set (0.00 sec)
+
+mysql> insert into Orders values(101, 2, '1990-09-09');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into Orders values(102, 1, '1990-07-09');
+Query OK, 1 row affected (0.01 sec)
+
+
+mysql> select * from Customer;
++------+------+--------+
+| ID   | Name | Gender |
++------+------+--------+
+|    1 | Aki  | F      |
+|    2 | Jhon | M      |
+|    3 | Bob  | M      |
+|    4 | Kavi | F      |
++------+------+--------+
+4 rows in set (0.00 sec)
+
+mysql> select * from Orders;
++------+------------+------------+
+| ID   | CustomerID | orderdate  |
++------+------------+------------+
+|  101 |          2 | 1990-09-09 |
+|  102 |          1 | 1990-07-09 |
++------+------------+------------+
+2 rows in set (0.00 sec)
+
+/* Inner Join : Returns records that have matching values in both tables */
+
+mysql> select ID,Name,Gender,ID,CustomerID,orderdate from Customer inner join Orders on Customer.ID = Orders.CustomerID;
++------+------+--------+------+------------+------------+
+| ID   | Name | Gender | ID   | CustomerID | orderdate  |
++------+------+--------+------+------------+------------+
+|    1 | Aki  | F      |    1 |          1 | 1990-07-09 |
+|    2 | Jhon | M      |    2 |          2 | 1990-09-09 |
++------+------+--------+------+------------+------------+
+2 rows in set (0.00 sec)
+
+/* Left Join (OUTER) : returns all records from the left table, and matched records from the right table  */
+
+mysql> select ID,Name,Gender,OrderID,CustomerID,orderdate from Customer left join Orders on Customer.ID = Orders.CustomerID;
++------+------+--------+---------+------------+------------+
+| ID   | Name | Gender | OrderID | CustomerID | orderdate  |
++------+------+--------+---------+------------+------------+
+|    1 | Aki  | F      |     102 |          1 | 1990-07-09 |
+|    2 | Jhon | M      |     101 |          2 | 1990-09-09 |
+|    3 | Bob  | M      |    NULL |       NULL | NULL       |
+|    4 | Kavi | F      |    NULL |       NULL | NULL       |
++------+------+--------+---------+------------+------------+
+4 rows in set (0.00 sec)
+
+/* Right Join : returns all records from the right table, and matched records from the left table */
+
+mysql> select ID,Name,Gender,OrderID,CustomerID,orderdate from Customer right join Orders on Customer.ID = Orders.CustomerID;
++------+------+--------+---------+------------+------------+
+| ID   | Name | Gender | OrderID | CustomerID | orderdate  |
++------+------+--------+---------+------------+------------+
+|    2 | Jhon | M      |     101 |          2 | 1990-09-09 |
+|    1 | Aki  | F      |     102 |          1 | 1990-07-09 |
++------+------+--------+---------+------------+------------+
+2 rows in set (0.00 sec)
+
+/* Cartesian Join or Cross Join : Returns all recors from both tables */
+
+mysql> select ID,Name,Gender,OrderID,CustomerID,orderdate from Customer, Orders;
++------+------+--------+---------+------------+------------+
+| ID   | Name | Gender | OrderID | CustomerID | orderdate  |
++------+------+--------+---------+------------+------------+
+|    1 | Aki  | F      |     102 |          1 | 1990-07-09 |
+|    1 | Aki  | F      |     101 |          2 | 1990-09-09 |
+|    2 | Jhon | M      |     102 |          1 | 1990-07-09 |
+|    2 | Jhon | M      |     101 |          2 | 1990-09-09 |
+|    3 | Bob  | M      |     102 |          1 | 1990-07-09 |
+|    3 | Bob  | M      |     101 |          2 | 1990-09-09 |
+|    4 | Kavi | F      |     102 |          1 | 1990-07-09 |
+|    4 | Kavi | F      |     101 |          2 | 1990-09-09 |
++------+------+--------+---------+------------+------------+
+8 rows in set (0.00 sec)
