@@ -21,4 +21,6 @@ Global variable :  These are variables that are preceded by the "$" symbol and c
 Note : Ruby supports variable interpolation, which means that you can embed the value of a variable within a string.   Ex : "#{variable_name}"
 
 Summary :
-variables in Ruby are named memory locations used to store values that can be accessed and changed throughout the program. Ruby has several types of variables, including local, instance, class, and global variables,each with its own scope and naming convention. It is important to choose meaningful and descriptive names for variables to make the code more readable and maintainable.
+> variables in Ruby are named memory locations used to store values that can be accessed and changed throughout the program.
+> Ruby has several types of variables, including local, instance, class, and global variables,each with its own scope and naming convention. 
+> It is important to choose meaningful and descriptive names for variables to make the code more readable and maintainable.
