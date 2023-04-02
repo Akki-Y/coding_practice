@@ -1,0 +1,25 @@
+Loop : loop is a control structure that allows you to execute a block of code repeatedly.There are several types of loops in Ruby.They are :
+
+While loops : The while loop executes a block of code while a certain condition is true.
+
+Until loop : The until loop is the opposite of the while loop. It executes a block of code until a given condition becomes true.
+
+For loop : The for loop is used to iterate over a range of values, an array, or a hash.
+
+each loop : The each loop is similar to the for loop, but it is used specifically for iterating over elements of an array or a hash.
+
+loop loop : The loop loop is a construct that creates an infinite loop until a break statement is encountered. 
+
+times loop : The times loop executes a block of code a specified number of times.
+
+break statement : The break statement is used to terminate a loop or a block. When executed within a loop, it immediately exits the loop and control is returned to the code immediately following the loop.
+
+redo statement : The redo statement is used to repeat the current iteration of a loop. When executed within a loop, it repeats the current iteration of the loop without evaluating the loop condition again.
+
+retry statement : The retry statement is used to repeat a loop or a block from the beginning. When executed within a loop, it starts the loop again with the initial conditions.
+
+next statement : The next statement is used to skip the current iteration of a loop and move on to the next iteration. When next is encountered inside a loop, it skips the current iteration and jumps to the next iteration.
+
+rescue statement : the rescue statement is used in exception handling to catch and handle errors that may occur during program execution. 
+
+Note : The loop construct can be a useful tool when you need to execute a block of code repeatedly, and it provides flexibility with break and next statements to control the loop flow.
