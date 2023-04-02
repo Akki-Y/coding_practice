@@ -20,7 +20,7 @@ Logical Operators : These are used to perform logical operations on Boolean valu
          > logical OR ||
          > logical not !
          
-Assignment Operator : These are used to assign values to variables.  Ex : x = x + 1
+Assignment Operators : These are used to assign values to variables.  Ex : x = x + 1
          > addition and assignment +=
          > subtraction and assignment -=
          > multiplication and assignment *=
