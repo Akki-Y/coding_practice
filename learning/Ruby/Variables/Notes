@@ -1,0 +1,26 @@
+Definition : Variables are the memory locations, which holds the data. It is used to store data that can be accessed and modified throughout the program.
+Variable start with a lowercase letter or an underscore, followed by any combination of letters, numbers, or underscores. It is recommended to use snake_case for variable names.
+Ruby is dynamically typed, which means that you do not need to declare the type of a variable before using it. The type is determined at runtime based on the value that is assigned to it.
+Assigning a value: In Ruby, you can assign a value to a variable using the equal sign (=) operator.      Ex : x = 5
+
+Variables in Ruby have a scope, which is the part of the program where they can be accessed :
+There are 4  types :
+Local variable 
+Instance variable 
+Class variable 
+Global variable 
+
+Local variable : These variables are defined within a method or a block and can only be accessed within that method or block.
+
+Instance variable : These are variables that are prefixed with an @ symbol and are accessible within an instance of a class.
+
+Class variable : These are variables that are preceded by the "@@" symbol and are associated with a particular class. They can be accessed from any instance of the class.
+
+Global variable :  These are variables that are preceded by the "$" symbol and can be accessed from anywhere in the program.
+
+Note : Ruby supports variable interpolation, which means that you can embed the value of a variable within a string.   Ex : "#{variable_name}"
+
+Summary :
+> variables in Ruby are named memory locations used to store values that can be accessed and changed throughout the program.
+> Ruby has several types of variables, including local, instance, class, and global variables,each with its own scope and naming convention. 
+> It is important to choose meaningful and descriptive names for variables to make the code more readable and maintainable.

@@ -1,0 +1,43 @@
+Conditional statements in ruby are used to execute different blocks of code based on a particular condition. Ruby provides several conditional statements that can be used to write flexible and powerful programs. 
+The most commonly used conditional statements in Ruby are if, else, elsif, unless, and case.
+
+if statement :  If statements are used to execute a block of code if a condition is true.
+      Syntax : if condition 
+                 # code to excecute if condition is true
+               end
+               
+Else statement : The else statement is used to execute a block of code if the condition specified in the if statement is false.
+     Syntax : if condition 
+                 # code to excecute if condition is true
+              else
+                 #  code to excecute if condition is false 
+              end
+              
+Elseif statement : The elsif statement is used to specify multiple conditions that are checked in sequence until a true condition is found.
+     Syntax : if condition1
+                 # code to excecute if condition is true
+              elseif condition2
+                 #  code to excecute if condition is false 
+              else
+                 # code to execute if all conditions are false 
+              end
+              
+Unless statement : The unless statement is used to execute a block of code if a given condition is false.     
+     Syntax : unless condition
+                # code to execute if condition is false
+              end
+              
+Case statement: Case statements are used to compare a single value against multiple possible values.
+     Syntax : case value
+                when value1
+                    # code to execute if value == value1
+                when value2
+                    # code to execute if value == value2
+                else
+                    # code to execute if value does not match any of the cases
+                end
+                
+      
+ Summary :
+> Conditional statements are an essential feature of Ruby programming that allow developers to make decisions based on certain conditions. 
+> The "if" statement is used to execute a block of code if a condition is true, while the "unless" statement does the opposite, executing a block of code only if a condition is false. The "case" statement is useful for testing multiple conditions in a single statement.

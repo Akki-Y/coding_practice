@@ -1,0 +1,54 @@
+Operators are symbols or keywords used to perform mathematical, logical or comparison operations on data.
+
+Arithmetic Operators  : These are used for performing basic mathematical operations.
+         > addition +
+         > subtraction -
+         > multiplication *
+         > division /
+         > modulo %
+         
+Comparision Operators : These are used to compare two values and return a Boolean value (true or false).
+         > check for equality ==
+         > inequality !=
+         > less than <
+         > greater than >
+         > lessthan or equal to <=
+         > greater than or equal to >=
+          
+Logical Operators : These are used to perform logical operations on Boolean values.
+         > logical AND &&
+         > logical OR ||
+         > logical not !
+         
+Assignment Operators : These are used to assign values to variables.  Ex : x = x + 1
+         > addition and assignment +=
+         > subtraction and assignment -=
+         > multiplication and assignment *=
+         > division and assignment /=
+         > modulo and assignment %=
+         
+Bitwise Operators : These are used to perform operations on individual bits of binary numbers.
+         > biwise AND &
+         > biwise OR |
+         > biwise XOR ^
+         > bitwise NOT ~
+         > biwise complement for left shift << 
+         > biwise complement for right shift >>
+         
+logical AND && : This operator returns true only if both the operands are true, otherwise it returns false.
+
+logical OR || :  This operator returns true if at least one of the operands is true, otherwise it returns false. 
+
+logical NOT ! : This operator is used to invert the boolean value of the operand. If the operand is true, then it returns false, and if the operand is false, then it returns true.
+
+biwise AND & :  This operator performs a bitwise AND operation on the corresponding bits of the two operands. The result is a binary value with a 1 in each bit position where both operands have a 1.
+
+biwise OR | : This operator performs a bitwise OR operation on the corresponding bits of the two operands. The result is a binary value with a 1 in each bit position where at least one operand has a 1. 
+
+biwise XOR ^ : This operator performs a bitwise XOR operation on the corresponding bits of the two operands. The result is a binary value with a 1 in each bit position where exactly one operand has a 1. 
+ 
+bitwise NOT ~ :  This operator performs a bitwise NOT operation on the operand. It returns the complement of the binary value, i.e., it inverts all the bits in the operand.
+ 
+bitwise complement left shift << :  the left shift operation 1100 << 2 is equivalent to multiplying the decimal number 12 by 2 raised to the power of 2, i.e., 12 * 2^2 = 48. 
+
+bitwise complement right shift >> : the right shift operation 1100 >> 2 is equivalent to dividing the decimal number 12 by 2 raised to the power of 2, i.e., 12 / 2^2 = 3.
