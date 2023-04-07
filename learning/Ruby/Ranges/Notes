@@ -1,0 +1,6 @@
+Ranges is an object that represents the sequence of values between a start point and an end point.
+
+Ranges are created using ".." and "..." operators, where the two dots ".." create an inclusive range and the three dots "..." create an exclusive range.
+
+(1..5)  # 1 2 3 4 5
+(1...5)  # 1 2 3 4 
