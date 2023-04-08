@@ -1,0 +1,11 @@
+Bubble Sort : It is a type of sorting algorithm, you can use to arrange a set of values in ascending order or descending order.
+Time Complexity : Big - O(n) notation
+
+Steps :
+1. Start at the beginning of the list which is unsorted list.
+2. Compare the first value with the next one, if the first value is bigger swap the positions of two values.
+3. Move to the second value in the list.
+4. Keep going until there are no more items to compare.
+5. Go back to the start of the list.
+
+RULE : Compare and Swap
