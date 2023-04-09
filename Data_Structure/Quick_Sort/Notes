@@ -1,0 +1,9 @@
+Quick sort : It is one of the most efficient sorting algorithms. Selecting the pivot element in an given array (first or last). It works by breaking an array into partition . Depending on the pivot element if the element is less than pivot swap to left, else greater than swap to right.
+Time Complexity : O (n log n)  Best Case
+
+Steps :
+
+1. Select an element in array i.e Pivot
+2. Define two variables i and j i.e first and last in the list.
+3. If i less than pivot swap to left , else right
+4. repeat and combine the arrays that have previously sorted.
