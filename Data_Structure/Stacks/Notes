@@ -1,0 +1,8 @@
+Stack : It is a linear data structure which follows a particular order in which the operations are performed.
+            The order may be  (Operations) :
+- LIFO ( Last - In - First - Out ) 
+- FILO ( First - In - Last - Out )
+
+=> A stack is used for the following two primary operations :
+-         Push() - Insert an element on the stack 
+-         Pop() - Deleting an element from the stack 
