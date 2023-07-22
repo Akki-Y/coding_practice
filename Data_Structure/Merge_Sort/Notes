@@ -1,16 +1,82 @@
-Merge Sort :  It is a sorting algorithm based on the divide and conquer strategy. It works by recursively dividing the array into two halves, then sort them and combine them. 
-- Divide : The array or list divides itself recursively into sub-arrays until the base case is reached.
-- Recursively Solved : The sub-arrays are sorted using recursion.
-- Combine : It makes use of merge() to combine the sub-arrays into the final sorted array.
+Merge Sort :  It is a sorting algorithm based on the divide and conquer strategy. 
+It works by recursively dividing the array into two halves, then sort them and combine them.
 
-Time Complexity : n log n  (Worst case)
+3 Steps :
+# Divide : Divide unsorted array in two halves. usually finding middle index of the array.
+# Conquer(Recursively Solved) : Recursively sort each half of the array (sub-arrays).
+# Merge(Combine) : Comparing two halves and arranging them in sorted order. The merged result replaces the original unsorted array.
+
+Time Complexity : O(nlogn)  
 
 Steps: 
 
-1. Find the middle index of the array.      mid = arr.length/2
+1. Find the middle index of the array.    
+        mid = arr.length/2
 2. Divide the array from the middle.
 3. Call merge sort for the first half of the array.
 4. Call merge sort for the second half of the array,
 5. Merge the two sorted halves into a single sorted array.
 
 RULE : Divide , solve recusively and combine.
+
+Concept :
+Base case :
+5, 6, 7, 1, 2
+# Divide : 5, 6 | 7, 1, 2
+# Two sublist : 5, 6 || 7, 1 | 2
+# single element sublist : 5 | 6 | 7 | 1 | 2
+
+Conquer and merge : 
+# start merging sublist :
+5, 6 || 1, 7 | 2 
+# Continue 
+5, 6 || 1, 2, 7
+# Merge 
+1, 2, 5, 6, 7
+
+How Iteration Works :
+Ex : 17, 2, 9, 6, 3
+
+Step 1 : Initial array 
+Arr : 17, 2, 9, 6, 3
+
+Step 2 : Divide 
+left = [17, 2]
+right = [9, 6, 3]
+
+Step 3 : Recursively Sort 
+Sorting left half :
+left = [17, 2]
+split two halves : 17 | 2
+sort two halves : 
+left = 17, right = 2
+merge = [2, 17]
+Left Sorted.
+
+Sorting right Half :
+right = [9, 6, 3]
+split two halves : 9 | 6, 3
+sort two halves :
+left = 9, right = 3, 6
+merge  = 3, 6, 9
+Right Sorted.
+
+Step 4 : Merge 
+
+Rule : while comparing smaller value is occur then add to merge.
+[2, 17] [3, 6, 9]
+
+Compare 2 | 3 , 2 smaller so add to merge 
+merge = [2]
+Compare 17 | 3 , 3 smaller so add to merge  
+merge = [2, 3]
+Compare 17 | 6 , 6 smaller so add to merge
+merge = [2, 3, 6]
+Compare 17 | 9, 9 smaller so add to merge
+merge = [2, 3, 6, 9]
+17 is greater so added to merge
+merge = [2, 3, 6, 9, 17]
+
+Sorted array = [2, 3, 6, 9, 17]
+
+
