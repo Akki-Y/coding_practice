@@ -1,0 +1,10 @@
+Selection Sort : It is an effective and efficient sort algorithm based on comparison operations.  It adds one element in each iteration. You need to select the smallest element in the array and move it to the beginning of the array by swapping with the front element.
+Time Complexity: O(n)2    
+
+Steps: 
+
+1. Set MIN value to location 0.
+2. Search the minimum element in the list.
+3. Swap with value(MAX) at location MIN.
+4. Increment MIN to next element.
+5. Repeat until list is sorted.

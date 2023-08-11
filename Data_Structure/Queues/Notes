@@ -1,0 +1,37 @@
+Queue : A queue follows FIFO (First - In - First - Out) method and is open at both of its end.
+             Ex : Movie tickets 
+
+Queue Operations : 
+-  Enqueue : The Enqueue operation is used to add an element to the front of the queue.
+
+Steps of the algorithm :
+1. Check if the Queue is full.
+2. Set the front as 0 for the first element.
+3. Increase rear by 1.
+4. Add the new element at the rear index.
+
+- Dequeue : The Dequeue operation is used to remove an element from the rear of the queue.
+
+Steps of the algorithm :
+1. Check if the Queue is empty.
+2. Return the value at the front index.
+3. Increase front by 1.
+4. Set front and rear as -1 for the last element.
+
+- isEmpty : The isEmpty operation is used to check if the queue is empty or not.
+
+Steps of the algorithm :
+1. Check if the number of elements in the queue (size) is equal to 0, if yes, return True.
+2. Return False.
+
+- Peek : The Peek operations is used to return the front most element of the queue.
+
+Steps of the algorithm :
+1. Check if the Queue is empty.
+2. Return the value at the front index.
+
+- isFull : The isFull operation is used to check if the queue is full or not.
+
+Steps of the algorithm :
+1. Check if the number of elements in the queue (size) is equal to the capacity, if yes, return True.
+2. Return False.

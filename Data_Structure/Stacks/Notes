@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Stack = LIFO [Last In First Out]
 
 # 2 Operations :
@@ -9,3 +10,21 @@
 # Peek : Returns top element without Removing it
 # isEmpty : Check if the stack is empty.
 # Size : Returns the number of elements in the stack.
+=======
+Stack : It is a linear data structure which follows a particular order in which the operations are performed.
+            The order may be  (Operations) :
+- LIFO ( Last - In - First - Out ) 
+- FILO ( First - In - Last - Out )
+
+# Stack = LIFO [Last In First Out]
+
+# 2 Operations :
+# push : Adds an element to top of stack 
+# Pop : Removes top element top from stack
+
+# Other Operations :
+
+# Peek : Returns top element without Removing it
+# isEmpty : Check if the stack is empty.
+# Size : Returns the number of elements in the stack.
+>>>>>>> a2bfca569bcbdebd29fb4337e2905f2471921da2
