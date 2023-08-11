@@ -1,0 +1,11 @@
+# Stack = LIFO [Last In First Out]
+
+# 2 Operations :
+# push : Adds an element to top of stack 
+# Pop : Removes top element top from stack
+
+# Other Operations :
+
+# Peek : Returns top element without Removing it
+# isEmpty : Check if the stack is empty.
+# Size : Returns the number of elements in the stack.
