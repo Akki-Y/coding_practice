@@ -1,5 +1,4 @@
 git add .
 git commit -m " Git commands"
-git origin push master
-git origin pull master
-clear
+git pull origin master
+git push origin master
