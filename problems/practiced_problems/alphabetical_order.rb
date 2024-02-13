@@ -2,7 +2,7 @@ array = ['k', 'a', 'i', 'b']
 length = array.length - 1
 swap = true
 while swap
-  swap = fa
+  swap = false
   length.times.each do|i|
   if array[i] > array[i+1]
     array[i],array[i+1] = array[i+1], array[i]

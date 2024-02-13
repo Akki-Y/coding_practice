@@ -35,3 +35,19 @@ Steps of the algorithm :
 Steps of the algorithm :
 1. Check if the number of elements in the queue (size) is equal to the capacity, if yes, return True.
 2. Return False.
+
+
+- Shift and unshift are methods associated with arrays, use to add or remove elements at beginning of array.
+
+1. Unshift method : Use to add one or more elements to the beginning of array.
+
+Ex:  arr = [2, 3, 4]
+      arr.unshift(1)  #Adds 1 to beginning of array.
+    puts array.inspect  # 1,2,3,4
+
+2. Shift Method : use to remove and return first element from an array.
+
+Ex: arr = [1, 2, 3, 4]
+first_element = arr.shift   # removes and returns first elemnt 1
+puts first_element           # 1
+puts array.inspect   # [2,3,4]

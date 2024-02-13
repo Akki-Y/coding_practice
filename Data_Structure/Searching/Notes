@@ -1,0 +1,11 @@
+Finding target value
+
+ALGORITHM :
+
+1. Set two pointers, left and right, to the start and end of the array respectively.
+2. Repeat until left is less than or equal to right:
+3. Calculate the middle index: mid = (left + right) / 2.
+4. If the middle element is the target element, return its index.
+5. If the target element is less than the middle element, update right = mid - 1 (the target must be in the left half).
+6. If the target element is greater than the middle element, update left = mid + 1 (the target must be in the right half).
+7. If the target element is not found, return a "not found" indicator.

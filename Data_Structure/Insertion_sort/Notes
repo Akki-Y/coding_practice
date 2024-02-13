@@ -6,7 +6,7 @@ Time Complexity : Big - O(n) notation
 
 Steps: 
 
-1. Assume ,If the first element in the array, it is already sorted. 
+1. Assume, If the first element in the array, it is already sorted. 
 2. Move to the next element and store it separately in key (temp_value).
 3. Now, First two elements are sorted. Take the third element and compare it with the elements on the left of it.
 4. Similarly, place every unsorted element as its correct position.
