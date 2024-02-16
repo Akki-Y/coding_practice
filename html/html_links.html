@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {background-color: black;}
+    h1 {color: pink;}
+    h2{color:aqua}
+    p{ color: yellowgreen;}
+  </style>
+  <link rel="stylesheet" href="links.css">
+</head>
+
+<body>
+  <h1>link</h1>
+  <p>The link text is the part that will be visible to the reader</p>
+  <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+  <hr>
+  <h1>Target attributes</h1>
+  <p>The target attribute specifies where to open the linked document.
+    _self, _blank,_parent, _top</p>
+  <a href="https://www.w3schools.com/" target="" _blank">Visitw3school</a>
+  <hr>
+  <h1>Absolute url vs Relative urls</h1>
+  <h2>Absolute url</h2>
+  <p><a href="https://www.google.com/">Google</a></p>
+  <a href="google.com">Google1</a>
+  <h2>Relative url</h2>
+  <p><a href="c:\Users\91630\Downloads\The-A-to-Z-of-Karma-Ebook-by-AiR-Atman-In-Ravi.pdf">PC Downloads</a></p>
+  <hr>
+  <p>Html links- Use an image as a link</p>
+  <a href="c:\Users\91630\Downloads\m011t0447_b_social_sign_18sep22.jpg">
+    <img src="c:\Users\91630\Downloads\m011t0447_b_social_sign_18sep22.jpg" alt="Google"
+      style="width:42px;height:42px;">
+  </a>
+
+  <h1>Link to an email address</h1>
+  <p>Use mailto: inside the href attribute to create a link that opens the users email program</p>
+  <a href="mailto:yakshaya23@gmail.com">send email</a>
+
+  <h1>Button as a link</h1>
+  <p>To use an HTML button as a link, you have to add some JavaScript code.<br>
+    JavaScript allows you to specify what happens at certain events</p>
+  <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+  <h1>Link titles</h1>
+  <p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip
+    text
+    when the mouse moves over the element.</p>
+  <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+</body>
+</html>
+
+
+<!-- 
+  Use the <a> element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the <img> element (inside <a>) to use an image as a link
+Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+
+ -->
