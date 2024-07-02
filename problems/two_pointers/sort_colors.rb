@@ -8,7 +8,7 @@ def sort_colors(colors)
   red = 0
   white = 0
   blue = colors.length - 1
-z
+
   (0..colors.length - 1).each do|i|
     if colors[white] == 0
       colors[white], colors[red] = colors[red], colors[white]
