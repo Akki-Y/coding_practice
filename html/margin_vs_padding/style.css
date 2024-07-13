@@ -1,0 +1,28 @@
+body {
+  background-color: goldenrod;
+}
+
+h1 {
+  color: pink;
+  text-align: center;
+}
+
+.margin {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #333;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.padding {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #333;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
