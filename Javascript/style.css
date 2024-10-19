@@ -1,14 +1,18 @@
 body{
   background-color: burlywood;
   color: rgb(89, 33, 42);
-  font-family: 'Lucida Sans';
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
-
 }
 
-button{
+button {
   border: none;
-  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  margin-bottom: 5px;
   border-radius: 5px;
   cursor: pointer;
 }
