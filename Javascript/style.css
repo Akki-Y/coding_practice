@@ -1,0 +1,22 @@
+body{
+  background-color: burlywood;
+  color: rgb(89, 33, 42);
+  font-family: 'Lucida Sans';
+  text-align: center;
+
+}
+
+button{
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#passenger-btn{
+  background-color: green;
+}
+
+#save-btn{
+  background-color: crimson;
+}
